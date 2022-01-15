@@ -1,0 +1,16 @@
+Install font with homebrew:
+	brew tap homebrew/cask-fonts
+	brew install --cask font-hack-nerd-font
+
+	https://github.com/ryanoasis/nerd-fonts
+
+iTerm2 -> Preferences -> Profiles -> Text -> Font
+	Select "Hack Nerd Font"
+
+Add the following to .zshrc
+	fpath=(/my/path/to/zsh/prompt $fpath)
+	autoload -Uz name_of_the_prompt_file; name_of_the_prompt_file
+
+Example:
+	fpath=(~/zsh_config $fpath)
+	autoload -Uz zshrc_prompt_file; zshrc_prompt_file
